@@ -1,91 +1,91 @@
-# SHOP LAPTOP - Website Ban Laptop Chinh Hang
+# SHOP LAPTOP - Website Bán Laptop Chính Hãng
 
-Website thuong mai dien tu ban laptop chinh hang, xay dung bang PHP thuan va MySQL.
+Website thương mại điện tử bán laptop chính hãng, được xây dựng bằng PHP thuần và MySQL.
 
-## Gioi thieu
+## Giới thiệu
 
-Day la du an website ban laptop voi day du chuc nang cho ca nguoi dung va quan tri vien. Website duoc thiet ke voi giao dien dark theme hien dai, ho tro day du cac tinh nang thuong mai dien tu co ban.
+Đây là dự án website bán laptop với đầy đủ chức năng dành cho cả người dùng và quản trị viên. Website được thiết kế với giao diện Dark Theme hiện đại, hỗ trợ đầy đủ các tính năng thương mại điện tử cơ bản.
 
-## Cong nghe su dung
+## Công nghệ sử dụng
 
-- **Backend:** PHP thuan (khong framework)
+- **Backend:** PHP thuần (không sử dụng framework)
 - **Database:** MySQL / MariaDB
 - **Frontend:** HTML5, CSS3, JavaScript (Vanilla)
 - **Server:** Apache (XAMPP)
-- **Bao mat:** MySQLi Prepared Statements, chong SQL Injection, chong XSS
+- **Bảo mật:** MySQLi Prepared Statements, chống SQL Injection, chống XSS
 
-## Chuc nang chinh
+## Chức năng chính
 
-### Nguoi dung (User)
+### Người dùng (User)
 
-- Dang ky tai khoan
-- Dang nhap / Dang xuat
-- Quen mat khau
-- Quan ly ho so ca nhan
-- Doi mat khau
-- Xem danh sach san pham
-- Tim kiem san pham
-- Loc san pham theo thuong hieu
-- Sap xep san pham theo gia (tang / giam)
-- Loc theo muc gia
-- Xem chi tiet san pham voi bo chuyen anh (Gallery)
-- Them san pham vao gio hang
-- Quan ly gio hang
-- Dat hang / Thanh toan
-- Xem lich su don hang
-- Chi tiet don hang
-- Huy don hang
-- Danh gia / Binh luan san pham
-- Xem them san pham (Load More - AJAX khong tai lai trang)
+- Đăng ký tài khoản
+- Đăng nhập / Đăng xuất
+- Quên mật khẩu
+- Quản lý hồ sơ cá nhân
+- Đổi mật khẩu
+- Xem danh sách sản phẩm
+- Tìm kiếm sản phẩm
+- Lọc sản phẩm theo thương hiệu
+- Sắp xếp sản phẩm theo giá (tăng dần / giảm dần)
+- Lọc theo mức giá
+- Xem chi tiết sản phẩm với bộ chuyển ảnh (Gallery)
+- Thêm sản phẩm vào giỏ hàng
+- Quản lý giỏ hàng
+- Đặt hàng / Thanh toán
+- Xem lịch sử đơn hàng
+- Xem chi tiết đơn hàng
+- Hủy đơn hàng
+- Đánh giá / Bình luận sản phẩm
+- Xem thêm sản phẩm (Load More - AJAX không tải lại trang)
 
-### Quan tri vien (Admin)
+### Quản trị viên (Admin)
 
-- Dashboard thong ke tong quan (san pham, khach hang, don hang, doanh thu)
-- Thong ke don hang theo trang thai
-- Quan ly san pham (CRUD)
-- Upload nhieu hinh anh cho san pham (Gallery nhieu goc chup)
-- Quan ly danh muc thuong hieu
-- Quan ly khach hang
-- Quan ly don hang (xem, cap nhat trang thai, xoa)
-- Quan ly binh luan / danh gia
-- Quan ly tai khoan admin
-- Tim kiem trong tung trang quan ly
+- Dashboard thống kê tổng quan (sản phẩm, khách hàng, đơn hàng, doanh thu)
+- Thống kê đơn hàng theo trạng thái
+- Quản lý sản phẩm (CRUD)
+- Tải lên nhiều hình ảnh cho sản phẩm (Gallery nhiều góc chụp)
+- Quản lý danh mục thương hiệu
+- Quản lý khách hàng
+- Quản lý đơn hàng (xem, cập nhật trạng thái, xóa)
+- Quản lý bình luận / đánh giá
+- Quản lý tài khoản admin
+- Tìm kiếm trong từng trang quản lý
 
-## Cau truc thu muc
+## Cấu trúc thư mục
 
-```
+```text
 web-Ban-LapTop/
 |
-|-- admin/                          # Khu vuc quan tri
-|   |-- assets-admin/css-admin/     # CSS rieng cho admin (Full Dark Theme)
+|-- admin/                          # Khu vực quản trị
+|   |-- assets-admin/css-admin/     # CSS riêng cho admin (Full Dark Theme)
 |   |-- includes-admin/             # Header, sidebar, footer admin
-|   |-- quan-ly-san-pham-admin/     # CRUD san pham
-|   |-- quan-ly-don-hang-admin/     # Quan ly don hang
-|   |-- quan-ly-khach-hang-admin/   # Quan ly khach hang
-|   |-- quan-ly-tai-khoan-admin/    # Quan ly tai khoan admin
-|   |-- quan-ly-thuong-hieu-admin/  # Quan ly thuong hieu
-|   |-- quan-ly-binh-luan-admin/    # Quan ly binh luan
-|   |-- xu-ly-admin/                # Xu ly logic admin (them, sua, xoa)
+|   |-- quan-ly-san-pham-admin/     # CRUD sản phẩm
+|   |-- quan-ly-don-hang-admin/     # Quản lý đơn hàng
+|   |-- quan-ly-khach-hang-admin/   # Quản lý khách hàng
+|   |-- quan-ly-tai-khoan-admin/    # Quản lý tài khoản admin
+|   |-- quan-ly-thuong-hieu-admin/  # Quản lý thương hiệu
+|   |-- quan-ly-binh-luan-admin/    # Quản lý bình luận
+|   |-- xu-ly-admin/                # Xử lý logic admin (thêm, sửa, xóa)
 |   +-- dashboard.php               # Trang Dashboard
 |
-|-- assets/                         # Tai nguyen frontend
+|-- assets/                         # Tài nguyên frontend
 |   |-- css/                        # File CSS (header, menu, index, footer, ...)
-|   |-- js/                         # File JS (gallery.js, load-more.js)
-|   +-- images/                     # Hinh anh giao dien (banner)
+|   |-- js/                         # File JavaScript (gallery.js, load-more.js)
+|   +-- images/                     # Hình ảnh giao diện (banner)
 |
 |-- config/
-|   +-- ket-noi.php                 # Cau hinh ket noi CSDL + ham tien ich
+|   +-- ket-noi.php                 # Cấu hình kết nối CSDL + hàm tiện ích
 |
 |-- database/
-|   +-- webbanlaptop.sql            # File SQL tao CSDL va du lieu mau
+|   +-- webbanlaptop.sql            # File SQL tạo CSDL và dữ liệu mẫu
 |
-|-- includes/                       # Thanh phan dung chung
+|-- includes/                       # Thành phần dùng chung
 |   |-- header.php
 |   |-- menu.php
 |   |-- footer.php
-|   +-- bo-loc.php                  # Bo loc san pham (thuong hieu, gia, sap xep)
+|   +-- bo-loc.php                  # Bộ lọc sản phẩm (thương hiệu, giá, sắp xếp)
 |
-|-- nguoi-dung/                     # Trang nguoi dung
+|-- nguoi-dung/                     # Trang người dùng
 |   |-- dang-nhap.php
 |   |-- dang-ky.php
 |   |-- quen-mat-khau.php
@@ -96,15 +96,15 @@ web-Ban-LapTop/
 |   |-- don-hang-cua-toi.php
 |   +-- chi-tiet-don-hang.php
 |
-|-- pages/                          # Trang san pham
-|   |-- chi-tiet.php                # Chi tiet san pham + Gallery anh + Danh gia
-|   |-- thuong-hieu.php             # Loc theo thuong hieu
-|   +-- tim-kiem.php                # Ket qua tim kiem
+|-- pages/                          # Trang sản phẩm
+|   |-- chi-tiet.php                # Chi tiết sản phẩm + Gallery ảnh + Đánh giá
+|   |-- thuong-hieu.php             # Lọc theo thương hiệu
+|   +-- tim-kiem.php                # Kết quả tìm kiếm
 |
 |-- uploads/
-|   +-- san-pham/                   # Thu muc luu hinh san pham upload
+|   +-- san-pham/                   # Thư mục lưu hình ảnh sản phẩm tải lên
 |
-|-- xu-ly/                          # Xu ly logic nguoi dung
+|-- xu-ly/                          # Xử lý logic người dùng
 |   |-- xu-ly-dang-nhap.php
 |   |-- xu-ly-dang-ky.php
 |   |-- xu-ly-dang-xuat.php
@@ -115,51 +115,51 @@ web-Ban-LapTop/
 |   |-- xu-ly-load-more.php         # API Load More (AJAX)
 |   +-- ...
 |
-|-- index.php                       # Trang chu
+|-- index.php                       # Trang chủ
 +-- .gitignore
 ```
 
-## Cai dat
+## Cài đặt
 
-### Yeu cau he thong
+### Yêu cầu hệ thống
 
 - PHP >= 7.4
-- MySQL >= 5.7 hoac MariaDB >= 10.4
+- MySQL >= 5.7 hoặc MariaDB >= 10.4
 - Apache Web Server
-- XAMPP (khuyen nghi su dung)
+- XAMPP (khuyến nghị sử dụng)
 
-### Cac buoc cai dat
+### Các bước cài đặt
 
-1. **Clone repository:**
+**1. Clone repository**
 
 ```bash
 git clone https://github.com/your-username/web-Ban-LapTop.git
 ```
 
-2. **Copy vao thu muc web server:**
+**2. Sao chép vào thư mục web server**
 
-Copy toan bo thu muc `web-Ban-LapTop` vao `htdocs` cua XAMPP:
+Sao chép toàn bộ thư mục `web-Ban-LapTop` vào thư mục `htdocs` của XAMPP:
 
-```
+```text
 C:\xampp\htdocs\web-Ban-LapTop\
 ```
 
-3. **Tao database:**
+**3. Tạo database**
 
-- Mo phpMyAdmin tai `http://localhost/phpmyadmin`
-- Tao database moi ten `webbanlaptop` voi charset `utf8mb4_general_ci`
-- Import file `database/webbanlaptop.sql`
+- Mở phpMyAdmin tại `http://localhost/phpmyadmin`.
+- Tạo database mới tên `webbanlaptop` với charset `utf8mb4_general_ci`.
+- Import file `database/webbanlaptop.sql`.
 
-Hoac dung command line:
+Hoặc sử dụng dòng lệnh:
 
 ```bash
 mysql -u root -e "CREATE DATABASE IF NOT EXISTS webbanlaptop CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;"
 mysql -u root webbanlaptop < database/webbanlaptop.sql
 ```
 
-4. **Cau hinh ket noi database:**
+**4. Cấu hình kết nối database**
 
-Mo file `config/ket-noi.php` va chinh sua thong tin neu can:
+Mở file `config/ket-noi.php` và chỉnh sửa thông tin kết nối nếu cần:
 
 ```php
 $servername = "localhost";
@@ -168,37 +168,39 @@ $password   = "";
 $database   = "webbanlaptop";
 ```
 
-5. **Khoi dong XAMPP:**
+**5. Khởi động XAMPP**
 
-- Bat Apache va MySQL trong XAMPP Control Panel
-- Truy cap: `http://localhost/web-Ban-LapTop/`
+- Bật Apache và MySQL trong XAMPP Control Panel.
+- Truy cập website tại: `http://localhost/web-Ban-LapTop/`.
 
-### Tai khoan mac dinh
+### Tài khoản mặc định
 
-| Vai tro | Email | Mat khau |
+| Vai trò | Email | Mật khẩu |
 |---------|-------|----------|
 | Admin | admin@gmail.com | 123456 |
 | User | tanloi10102006@gmail.com | 123456 |
 
-## Co so du lieu
+> **Lưu ý:** Đây là tài khoản mẫu phục vụ việc chạy thử dự án. Không sử dụng mật khẩu mặc định này trên website thực tế.
 
-### Bang du lieu
+## Cơ sở dữ liệu
 
-| Bang | Mo ta |
+### Các bảng dữ liệu
+
+| Bảng | Mô tả |
 |------|-------|
-| `TaiKhoan` | Luu thong tin tai khoan nguoi dung va admin |
-| `HangLaptop` | Danh muc thuong hieu laptop (Apple, Dell, HP, Asus, Acer, Lenovo) |
-| `SanPham` | Thong tin san pham laptop |
-| `HinhAnhSanPham` | Bo suu tap hinh anh san pham (Gallery nhieu goc chup) |
-| `GioHang` | Gio hang cua nguoi dung |
-| `ChiTietGioHang` | Chi tiet san pham trong gio hang |
-| `DonHang` | Thong tin don dat hang |
-| `ChiTietDonHang` | Chi tiet san pham trong don hang |
-| `DanhGia` | Danh gia va binh luan san pham |
+| `TaiKhoan` | Lưu thông tin tài khoản người dùng và admin |
+| `HangLaptop` | Danh mục thương hiệu laptop (Apple, Dell, HP, Asus, Acer, Lenovo) |
+| `SanPham` | Thông tin sản phẩm laptop |
+| `HinhAnhSanPham` | Bộ sưu tập hình ảnh sản phẩm (Gallery nhiều góc chụp) |
+| `GioHang` | Giỏ hàng của người dùng |
+| `ChiTietGioHang` | Chi tiết sản phẩm trong giỏ hàng |
+| `DonHang` | Thông tin đơn đặt hàng |
+| `ChiTietDonHang` | Chi tiết sản phẩm trong đơn hàng |
+| `DanhGia` | Đánh giá và bình luận sản phẩm |
 
-### So do quan he
+### Sơ đồ quan hệ
 
-```
+```text
 TaiKhoan (1) --- (N) DonHang
 TaiKhoan (1) --- (1) GioHang
 TaiKhoan (1) --- (N) DanhGia
@@ -211,67 +213,90 @@ GioHang (1) --- (N) ChiTietGioHang
 DonHang (1) --- (N) ChiTietDonHang
 ```
 
-## Tinh nang noi bat
+## Tính năng nổi bật
 
-### Load More Products (AJAX)
-- Hien thi 8 san pham ban dau
-- Bam nut "Xem them san pham" de tai them ma khong tai lai trang
-- Tu dong an nut khi da hien thi het san pham
-- Giu nguyen bo loc thuong hieu, tim kiem va sap xep gia
+### 1. Load More Products (AJAX)
 
-### Product Image Gallery
-- Ho tro nhieu hinh anh cho moi san pham (chup nhieu goc)
-- Admin co the upload nhieu anh cung luc
-- Nut chuyen anh trai/phai va so dem (1/4, 2/4, ...)
-- Click anh thumbnail de chuyen nhanh
-- Ho tro phim mui ten trai/phai tren ban phim
+- Hiển thị 8 sản phẩm ban đầu.
+- Nhấn nút **"Xem thêm sản phẩm"** để tải thêm sản phẩm mà không cần tải lại trang.
+- Tự động ẩn nút khi đã hiển thị hết sản phẩm.
+- Giữ nguyên bộ lọc thương hiệu, tìm kiếm và sắp xếp giá.
 
-### Giao dien Admin Full Dark Theme
-- Toan bo giao dien admin su dung tong mau toi dong nhat
-- Nen chinh: #12141a | Card: #1a1d26 | Vien: #2b3040
-- Giao dien chuyen nghiep, de doc va responsive
+### 2. Product Image Gallery
 
-## Hinh anh minh hoa
+- Hỗ trợ nhiều hình ảnh cho mỗi sản phẩm, chụp từ nhiều góc.
+- Admin có thể tải lên nhiều ảnh cùng lúc.
+- Có nút chuyển ảnh trái/phải và số thứ tự ảnh (1/4, 2/4, ...).
+- Nhấn vào ảnh thu nhỏ (thumbnail) để chuyển ảnh nhanh.
+- Hỗ trợ sử dụng phím mũi tên trái/phải trên bàn phím.
 
-### Trang chu
-- Hien thi banner khuyen mai
-- Danh sach san pham moi nhat
-- Bo loc thuong hieu, gia, sap xep
+### 3. Giao diện Admin Full Dark Theme
 
-### Trang chi tiet san pham
-- Gallery anh voi nut chuyen trai/phai
-- Thong so ky thuat chi tiet
-- Nut them gio hang va mua ngay
-- Khu vuc danh gia binh luan
+- Toàn bộ giao diện admin sử dụng tông màu tối đồng nhất.
+- Màu nền chính: `#12141a`.
+- Màu nền thẻ: `#1a1d26`.
+- Màu đường viền: `#2b3040`.
+- Giao diện chuyên nghiệp, dễ đọc và tương thích với nhiều kích thước màn hình (responsive).
 
-### Trang quan tri
-- Dashboard thong ke tong quan
-- Quan ly san pham voi upload nhieu anh
-- Quan ly don hang, khach hang, binh luan
+## Hình ảnh minh họa
 
-## Bao mat
+### Trang chủ
 
-- Chong SQL Injection bang `mysqli_real_escape_string()`
-- Chong XSS bang `htmlspecialchars()`
-- Kiem tra quyen truy cap admin bang Session
-- Mat khau duoc ma hoa bang `md5()` (khuyen nghi nang cap len `password_hash()`)
-- Kiem tra dinh dang file upload (chi cho phep jpg, png, webp, gif)
-- Lam sach du lieu dau vao truoc khi xu ly
+- Hiển thị banner khuyến mãi.
+- Danh sách sản phẩm mới nhất.
+- Bộ lọc thương hiệu, giá và sắp xếp.
 
-## Dong gop
+### Trang chi tiết sản phẩm
 
-1. Fork repository
-2. Tao branch moi: `git checkout -b feature/ten-tinh-nang`
-3. Commit thay doi: `git commit -m "Them tinh nang moi"`
-4. Push len branch: `git push origin feature/ten-tinh-nang`
-5. Tao Pull Request
+- Gallery hình ảnh với nút chuyển trái/phải.
+- Hiển thị thông số kỹ thuật chi tiết.
+- Nút thêm vào giỏ hàng và mua ngay.
+- Khu vực đánh giá, bình luận.
 
-## Tac gia
+### Trang quản trị
 
-- **Ho va ten:** Tan Loi
-- **Lien he:** tanloi10102006@gmail.com
+- Dashboard thống kê tổng quan.
+- Quản lý sản phẩm với chức năng tải lên nhiều hình ảnh.
+- Quản lý đơn hàng, khách hàng và bình luận.
 
-## Giay phep
+## Bảo mật
 
-Du an nay duoc phat trien cho muc dich hoc tap va nghien cuu.
+- Sử dụng `mysqli_real_escape_string()` để xử lý dữ liệu đầu vào. Nên ưu tiên **MySQLi Prepared Statements** cho các truy vấn SQL.
+- Sử dụng `htmlspecialchars()` để hạn chế nguy cơ XSS khi hiển thị dữ liệu.
+- Kiểm tra quyền truy cập admin bằng Session.
+- Mật khẩu cần được mã hóa bằng `password_hash()` và kiểm tra bằng `password_verify()`. Không nên sử dụng `md5()` để lưu mật khẩu.
+- Kiểm tra loại và nội dung tệp tải lên; chỉ cho phép các định dạng cần thiết như JPG, PNG, WebP, GIF.
+- Kiểm tra và xác thực dữ liệu đầu vào trước khi xử lý.
+- Kiểm tra quyền sở hữu đơn hàng, giỏ hàng và các dữ liệu riêng tư trước khi cho phép truy cập hoặc chỉnh sửa.
 
+## Đóng góp
+
+1. Fork repository.
+2. Tạo branch mới:
+
+   ```bash
+   git checkout -b feature/ten-tinh-nang
+   ```
+
+3. Commit thay đổi:
+
+   ```bash
+   git commit -m "Thêm tính năng mới"
+   ```
+
+4. Push lên branch:
+
+   ```bash
+   git push origin feature/ten-tinh-nang
+   ```
+
+5. Tạo Pull Request.
+
+## Tác giả
+
+- **Họ và tên:** Tan Loi
+- **Liên hệ:** tanloi10102006@gmail.com
+
+## Giấy phép
+
+Dự án được phát triển phục vụ mục đích học tập và nghiên cứu.
