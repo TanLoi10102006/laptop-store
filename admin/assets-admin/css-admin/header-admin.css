@@ -1,0 +1,123 @@
+/* ==========================================================
+   ADMIN THEME: UNIFIED FULL DARK - HEADER
+   Background: #12141a | Border: #232734
+========================================================== */
+
+.admin-header {
+    width: 100%;
+    height: 70px;
+    background: #12141a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    border-bottom: 1px solid #232734;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.header-left {
+    margin-left: 260px;
+}
+
+.header-left h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-center form {
+    display: flex;
+}
+
+.header-center input {
+    width: 280px;
+    height: 40px;
+    border: 1px solid #2b3040;
+    border-right: none;
+    outline: none;
+    padding: 0 15px;
+    border-radius: 8px 0 0 8px;
+    background: #1a1d26;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.header-center input:focus {
+    border-color: #0d6efd;
+}
+
+.header-center button {
+    height: 40px;
+    padding: 0 18px;
+    border: none;
+    background: #0d6efd;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    font-weight: 600;
+    transition: background 0.25s ease;
+}
+
+.header-center button:hover {
+    background: #0b5ed7;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-info {
+    color: #cbd5e1;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.user-info strong {
+    color: #ffffff;
+}
+
+.header-right .btn-home {
+    background: #232734;
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    border: 1px solid #2b3040;
+    transition: all 0.25s ease;
+}
+
+.header-right .btn-home:hover {
+    background: #2b3040;
+    color: #ffffff;
+}
+
+.header-right .btn-logout {
+    background: #eb4d4b;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    transition: background 0.25s ease;
+}
+
+.header-right .btn-logout:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .header-left {
+        margin-left: 0;
+    }
+    .header-center {
+        display: none;
+    }
+}

@@ -1,0 +1,60 @@
+/* ==========================================================
+   ADMIN THEME: UNIFIED FULL DARK - SIDEBAR
+   Background: #12141a | Item active/hover: #0d6efd
+========================================================== */
+
+.sidebar-admin {
+    width: 260px;
+    height: 100vh;
+    background: #12141a;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow-y: auto;
+    border-right: 1px solid #232734;
+    z-index: 1000;
+}
+
+.logo-admin {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #232734;
+    background: #12141a;
+}
+
+.logo-admin h2 {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+
+.sidebar-admin ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+.sidebar-admin ul li {
+    border-bottom: 1px solid #1a1d26;
+}
+
+.sidebar-admin ul li a {
+    display: block;
+    color: #94a3b8;
+    text-decoration: none;
+    padding: 14px 22px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+}
+
+.sidebar-admin ul li a:hover,
+.sidebar-admin ul li a.active {
+    background: #0d6efd;
+    color: #ffffff;
+    padding-left: 28px;
+    font-weight: 600;
+}

@@ -1,0 +1,43 @@
+# === IDE & Editor ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# === OS Files ===
+desktop.ini
+ehthumbs.db
+Icon?
+
+# === XAMPP / Server Config ===
+.htaccess
+
+# === Logs ===
+*.log
+error_log
+
+# === Temporary Files ===
+*.tmp
+*.bak
+*.backup
+
+# === Environment ===
+.env
+.env.local
+.env.production
+
+# === Node (neu co su dung) ===
+node_modules/
+package-lock.json
+
+# === Composer (neu co su dung) ===
+vendor/
+composer.lock
+
+# === System Report (khong can thiet tren GitHub) ===
+BAO_CAO_NANG_CAP.md
+BAO_CAO_HE_THONG.md
+

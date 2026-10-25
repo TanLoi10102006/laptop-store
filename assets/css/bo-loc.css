@@ -1,0 +1,64 @@
+.filter-container {
+    max-width: 1200px;
+    margin: 15px auto 25px auto;
+    padding: 15px 20px;
+    background: #23252d;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 25px;
+}
+
+.sort-product, .price-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-label {
+    color: #a4b0be;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.sort-product a, .price-filter a {
+    color: #e4e7eb;
+    text-decoration: none;
+    font-size: 13px;
+    background-color: #333846;
+    padding: 7px 14px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+}
+
+.sort-product a:hover, .price-filter a:hover {
+    background-color: #2f80ed;
+    color: #ffffff;
+    transform: translateY(-1px);
+}
+
+.sort-product a.active-filter, .price-filter a.active-filter {
+    background-color: #2f80ed;
+    color: #ffffff;
+    border-color: #5ea4ff;
+    font-weight: bold;
+}
+
+.clear-filter {
+    background-color: #e74c3c !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.clear-filter:hover {
+    background-color: #c0392b !important;
+}
