@@ -238,26 +238,6 @@ DonHang (1) --- (N) ChiTietDonHang
 - Màu đường viền: `#2b3040`.
 - Giao diện chuyên nghiệp, dễ đọc và tương thích với nhiều kích thước màn hình (responsive).
 
-## Hình ảnh minh họa
-
-### Trang chủ
-
-- Hiển thị banner khuyến mãi.
-- Danh sách sản phẩm mới nhất.
-- Bộ lọc thương hiệu, giá và sắp xếp.
-
-### Trang chi tiết sản phẩm
-
-- Gallery hình ảnh với nút chuyển trái/phải.
-- Hiển thị thông số kỹ thuật chi tiết.
-- Nút thêm vào giỏ hàng và mua ngay.
-- Khu vực đánh giá, bình luận.
-
-### Trang quản trị
-
-- Dashboard thống kê tổng quan.
-- Quản lý sản phẩm với chức năng tải lên nhiều hình ảnh.
-- Quản lý đơn hàng, khách hàng và bình luận.
 
 ## Bảo mật
 
